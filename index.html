@@ -1,246 +1,250 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" />
 <style>
-html {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.A-Cont-Container {
-    width: 100%;
-    float: left;
-}
-
-.A-Cont-Wrapper {
-    width: 770px;
-    margin: 0 auto;
-}
-
-.A-Header-Container {
-    width: 100%;
-    float: left;
-    margin-bottom: 40px;
-}
-
-.A-Cont-Wrapper img {
-    max-width: 100%;
-}
-
-.A-Product-Description {
-    width: 100%;
-    display: table;
-    margin-bottom: 40px;
-}
-
-.A-Product-Description .Column {
-    display: table-cell;
-    vertical-align: middle;
-    width: 33.3%;
-    padding: 0 15px;
-}
-
-.A-Product-Description .Column:first-child {
-    padding-left: 0;
-}
-
-.A-Product-Description .Column:last-child {
-    padding-right: 0;
-}
-
-.A-Cont-Wrapper .Text-Uppercase {
-    text-transform: uppercase
-}
-
-.A-Cont-Wrapper h4 {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-}
-
-.A-Cont-Wrapper p {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-}
-
-.A-Product-Desc h4 {
-    margin-bottom: 10px;
-}
-
-.A-Product-Description .Invigo-Container p {
-    margin-bottom: 10px;
-}
-
-.A-Product-Description .Invigo-Container img {
-    margin-bottom: 20px;
-}
-
-.A-Product-Description .Invigo-Container {
-    border-left: 1px solid #ccc;
-}
-
-.A-Slider-Container {
-    width: 100%;
-    float: left;
-    margin-bottom: 40px;
-}
-
-.A-Slider-Container .Slider-Main-Image {
-    width: 33.3%;
-    float: left;
-    padding-right: 15px;
-    box-sizing: border-box;
-}
-
-.A-Slider-Container .Slider-Content-Container {
-    width: 66.67%;
-    float: left;
-    padding-left: 15px;
-    box-sizing: border-box;
-}
-
-.A-Slider-Container .Slider-Content-Container h5 {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 15px;
-}
-
-.A-Slider-Container ul {
-    width: auto;
-    float: left;
-    margin: 40px 0 0 15px;
-    padding: 0;
-}
-
-.A-Slider-Container ul li {
-    list-style: none;
-    width: 25%;
-    float: left;
-    max-width: 82px;
-}
-
-.A-Slider-Container ul li img {
-    opacity: 0.6;
-    cursor: pointer;
-}
-
-.A-Slider-Container ul li img:hover {
-    opacity: 1;
-    transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-}
-
-.A-Slider-Content.active .Slider-Content-Container {
-    display: block;
-}
-
-.A-Slider-Content .Slider-Content-Container {
-    display: none;
-}
-
-.A-Slider-Content.active .Slider-Main-Image {
-    display: block;
-}
-
-.A-Slider-Content .Slider-Main-Image {
-    display: none;
-}
-
-.A-Product-Table-Container {
-    width: 100%;
-    float: left;
-    margin-bottom: 20px;
-    overflow: auto;
-}
-
-.A-Product-Table-Container table {
-    font-size: 12px;
-    text-align: center;
-    border-collapse: collapse;
-    min-width: 767px;
-}
-
-.A-Product-Table-Container table tr td img {
-    min-height: 300px;
-}
-
-.A-Product-Table-Container table tr:first-child td {
-    vertical-align: top
-}
-
-.A-Product-Table-Container table tr th {
-    min-width: 120px;
-    text-align: left
-}
-
-.A-Product-Table-Container table tr th, .A-Product-Table-Container table tr td {
-    padding: 5px;
-    border: 1px solid #ccc;
-}
-
-/*Responsive Queries*/
-
-@media only screen and (max-width:770px) {
-    .A-Cont-Wrapper {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:767px) {
-    .A-Product-Description .Column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
-    .A-Product-Description .Column:first-child {
-        padding: 0 15px;
-    }
-    .A-Product-Description .Column:last-child {
-        padding: 0 15px;
-    }
-    .A-Product-Table-Container {
-        width: 95%;
-        box-sizing: border-box;
-        margin: 0 auto;
-        float: none;
-        border-right: 1px solid #ccc;
-    }
-    .A-Slider-Container .Slider-Main-Image {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 0 15px;
-    }
-    .A-Slider-Container .A-Slider-Content {
-        margin-bottom: 30px;
-        padding: 0 15px;
+    .A-Cont-Container {
         width: 100%;
         float: left;
+    }
+
+    .A-Cont-Wrapper {
+        width: 770px;
+        margin: 0 auto;
+    }
+
+    .A-Header-Container {
+        width: 100%;
+        float: left;
+        margin-bottom: 40px;
+    }
+
+    .A-Cont-Wrapper img {
+        max-width: 100%;
+    }
+
+    .A-Product-Description {
+        width: 100%;
+        display: table;
+        margin-bottom: 40px;
+    }
+
+    .A-Product-Description .Column {
+        display: table-cell;
+        vertical-align: middle;
+        width: 33.3%;
+        padding: 0 15px;
+    }
+
+    .A-Product-Description .Column:first-child {
+        padding-left: 0;
+    }
+
+    .A-Product-Description .Column:last-child {
+        padding-right: 0;
+    }
+
+    .A-Cont-Wrapper .Text-Uppercase {
+        text-transform: uppercase
+    }
+
+    .A-Cont-Wrapper h4 {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+    }
+
+    .A-Cont-Wrapper p {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .A-Product-Desc h4 {
+        margin-bottom: 10px;
+    }
+
+    .A-Product-Description .Invigo-Container p {
+        margin-bottom: 10px;
+    }
+
+    .A-Product-Description .Invigo-Container img {
+        margin-bottom: 20px;
+    }
+
+    .A-Product-Description .Invigo-Container {
+        border-left: 1px solid #ccc;
+    }
+
+    .A-Slider-Container {
+        width: 100%;
+        float: left;
+        margin-bottom: 40px;
+        position:relative;
+    }
+
+    .A-Slider-Container .Slider-Main-Image {
+        width: 33.3%;
+        float: left;
+        padding-right: 15px;
         box-sizing: border-box;
     }
-    .A-Slider-Container ul {
-        display: none
-    }
+
     .A-Slider-Container .Slider-Content-Container {
-        width: 100%;
+        width: 66.67%;
+        float: left;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .A-Slider-Container .Slider-Content-Container h5 {
+        margin: 0;
         padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .A-Slider-Container ul {
+        width: auto;
+        float: left;
+        margin: 40px 0 0 15px;
+        padding: 0;
+        position: absolute;
+        left: 33.3%;
+        bottom:0;
+    }
+
+    .A-Slider-Container ul li {
+        list-style: none;
+        width: 25%;
+        float: left;
+        max-width: 82px;
+    }
+
+    .A-Slider-Container ul li img {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    .A-Slider-Container ul li img:hover {
+        opacity: 1;
+        transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+    }
+
+    .A-Slider-Content.active .Slider-Content-Container {
         display: block;
     }
+
+    .A-Slider-Content .Slider-Content-Container {
+        display: none;
+    }
+
+    .A-Slider-Content.active .Slider-Main-Image {
+        display: block;
+    }
+
     .A-Slider-Content .Slider-Main-Image {
-        display: block;
-        padding: 0;
+        display: none;
     }
-}
+
+    .A-Product-Table-Container {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        overflow: auto;
+    }
+
+    .A-Product-Table-Container table {
+        font-size: 12px;
+        text-align: center;
+        border-collapse: collapse;
+        min-width: 767px;
+    }
+
+    .A-Product-Table-Container table tr td img {
+        min-height: 300px;
+    }
+
+    .A-Product-Table-Container table tr:first-child td {
+        vertical-align: top
+    }
+
+    .A-Product-Table-Container table tr th {
+        min-width: 120px;
+        text-align: left
+    }
+
+    .A-Product-Table-Container table tr th,
+    .A-Product-Table-Container table tr td {
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+
+    /*Responsive Queries*/
+
+    @media only screen and (max-width:770px) {
+        .A-Cont-Wrapper {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:767px) {
+        .A-Product-Description .Column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        .A-Product-Description .Column:first-child {
+            padding: 0 15px;
+        }
+
+        .A-Product-Description .Column:last-child {
+            padding: 0 15px;
+        }
+
+        .A-Product-Table-Container {
+            width: 95%;
+            box-sizing: border-box;
+            margin: 0 auto;
+            float: none;
+            border-right: 1px solid #ccc;
+        }
+
+        .A-Slider-Container .Slider-Main-Image {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+
+        .A-Slider-Container .A-Slider-Content {
+            margin-bottom: 30px;
+            padding: 0 15px;
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .A-Slider-Container ul {
+            display: none
+        }
+
+        .A-Slider-Container .Slider-Content-Container {
+            width: 100%;
+            padding: 0;
+            display: block;
+        }
+
+        .A-Slider-Content .Slider-Main-Image {
+            display: block;
+            padding: 0;
+        }
+
+        .A-Product-Description .Invigo-Container{
+            border-left: 0;
+        }
+    }
 </style>
 
 <div class="A-Cont-Container">
@@ -323,10 +327,8 @@ html, body {
                         t is a long established fact that a reader will be distracted by
                     </h5>
                     <p class="text1">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book.
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using
                     </p>
 
                 </div>
@@ -345,10 +347,9 @@ html, body {
                         Contrary to popular belief, Lorem Ipsum is not simply random text
                     </h5>
                     <p class="text1">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book.
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin professor at Hampden-
                     </p>
 
                 </div>
@@ -367,10 +368,9 @@ html, body {
                         There are many variations of passages of Lorem Ipsum available
                     </h5>
                     <p class="text1">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book.
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
                     </p>
 
                 </div>
